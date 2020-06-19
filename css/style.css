@@ -43,3 +43,11 @@ nav {
 #my_sec_portfolio .my_line {
     border-bottom: 2px solid #2c3e50;
 }
+
+#my_sec_portfolio .my_star {
+    margin-bottom: 30px;
+}
+
+#my_sec_portfolio .my_port_img {
+    padding: 15px;
+}
