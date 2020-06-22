@@ -140,3 +140,13 @@ section h4 {
     border-bottom: 1px solid #e9ecef;
     box-shadow: none;
 }
+
+#my_sec_about {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.my_btn_download {
+    background-color: #1abc9c;
+    color: white;
+}
