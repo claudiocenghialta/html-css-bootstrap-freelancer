@@ -1,12 +1,44 @@
 header {
-    color: white;
+    position: fixed;
+    height: 80px;
+    line-height: 80px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 nav {
+    font-size: 3rem;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+section h4 {
+    font-size: 2.5rem;
+}
+
+.my_sec_green {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.my_sec_blue {
     background-color: #2c3e50;
-    font-size: 2rem;
-    height: 100px;
-    line-height: 100px;
+    color: white;
+}
+
+.my_sec_white {
+    background-color: white;
+    color #2c3e50;
 }
 
 .my_menu {
@@ -15,49 +47,96 @@ nav {
     font-size: 1.85rem;
 }
 
-.header_bottom {
-    background-color: #1abc9c;
-    padding-top: 25px;
-    padding-bottom: 25px;
+#my_banner {
+    margin-top: 80px;
 }
 
-.my_star {
-    font-size: 30px;
-    height: 30px;
-    line-height: 30px;
+#my_banner h1 {
+    font-size: 5rem;
+    font-weight: bold;
 }
 
-.my_line {
+[class^=my_star] span.glyphicon {
+    font-size: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.my_star_light::before,
+.my_star_light::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: white;
+    border-radius: 1px;
     display: inline-block;
-    width: 70px;
-    border-bottom: 2px solid white;
-    transform: translateY(-50%);
-    line-height: 30px;
-    height: 30px;
+    position: relative;
+    bottom: 18px;
 }
 
-#my_sec_portfolio {
-    color: #2c3e50;
+.my_star_dark::before,
+.my_star_dark::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #2c3e50;
+    border-radius: 1px;
+    display: inline-block;
+    position: relative;
+    bottom: 18px;
 }
 
-#my_sec_portfolio .my_line {
-    border-bottom: 2px solid #2c3e50;
-}
-
-#my_sec_portfolio .my_star {
-    margin-bottom: 30px;
-}
-
-#my_sec_portfolio .my_port_img {
+.my_portfolio_img_container {
     padding: 15px;
 }
 
-#my_sec_about {
+.my_portfolio_img {
+    position: relative;
+}
+
+.my_portfolio-overlay {
+    display: none;
+}
+
+.my_portfolio_img:hover .my_portfolio-overlay {
+    display: block;
+    background-color: #29b096;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.my_portfolio-overlay .glyphicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 55px;
+}
+
+.my_about_text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.my_btn_green {
+    margin-top: 10px;
     background-color: #1abc9c;
     color: white;
 }
 
-.my_btn_download {
-    background-color: #1abc9c;
-    color: white;
+.form-control {
+    border: none;
+    box-shadow: none;
+}
+
+.form-group {
+    border-top: none;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: none;
 }
