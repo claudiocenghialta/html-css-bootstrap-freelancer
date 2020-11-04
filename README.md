@@ -1,3 +1,5 @@
 html-css-bootstrap-freelancer
 
-https://startbootstrap.github.io/startbootstrap-freelancer/
+clone del sito https://startbootstrap.github.io/startbootstrap-freelancer/
+
+Utilizzato bootstrap
